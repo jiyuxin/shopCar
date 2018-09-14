@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<a href="javascript:;" class="go"><img src="img/00-go.png"></a>
+	<a href="javascript:;" class="more"><img src="img/00-more.png"></a>
+	<div id="dowebok">
+	   <div class="section first">
+	   	<!-- 都有什么   沙发飞船什么的 -->
+	   		<div class="content">
+	   			<div class="goods"><img src="img/01-goods.png"></div>
+	   			<div class="sofa"><img src="img/01-sofa.png" alt=""></div>
+	   			<div class="fly"><img src="img/01-fly.png"></div>
+	   		</div>
+	   </div>
+	   <div class="section">
+	   	<div class="content"></div>
+	   </div>
+	   <div class="section">
+	   	<h3>第3屏</h3>
+	   </div>
+	   <div class="section">
+	   	<h3>第4屏</h3>
+	   </div>
+	   <div class="section">
+	   	<h3>第5屏</h3>
+	   </div>
+	   <div class="section">
+	   	<h3>第6屏</h3>
+	   </div>
+	   <div class="section">
+	   	<h3>第7屏</h3>
+	   </div>
+	   <div class="section">
+	   	<h3>第8屏</h3>
+	   </div>
+	</div>
+</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript">
+		$(function ($){
+			$('#dowebok').fullpage({
+				sectionsColor: ['#f9cd9e', 'yellow', 'hotpink', 'skyblue', 'orange', 'yellowgreen' ,'#f85555', '#777777'],
+				verticalCentered: false,
+				navigation: true
+			})
+		})	
+	</script>
+</html>

@@ -1,0 +1,73 @@
+/*
+	============================公共部分的样式
+ */
+.go, .more {
+	position: fixed;
+}
+
+.go {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	right: 100px;
+	top: 100px;
+	z-index: 999;
+}
+
+.more {
+	right: 60px;
+	bottom: 80px;
+	z-index: 999;
+	animation: fly 2s linear infinite;
+}
+
+#dowebok .section h3 {
+	margin: 0;
+}
+
+/*================================第一页*/
+#dowebok .section .content {
+	width: 900px;
+	height: 600px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, .1);
+}
+
+#dowebok .first {
+	background: url('../img/01-bg.png') no-repeat center bottom;
+}
+.first .goods {
+	text-align: center;
+	margin-top: 230px;
+
+}
+.first .sofa {
+	position: absolute;
+	left: 200px;
+	top: 200px;
+	animation: fly 2.5s linear infinite;
+}
+.first .fly {
+	position: absolute;
+	top: 20px;
+	right: -50px;
+	animation: fly 5s linear infinite;
+}
+/*第一页动画*/
+
+@keyframes fly {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(50px);
+	}
+	100% {
+		transform: translateY(-50px);
+	} 
+
+
+}
